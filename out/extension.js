@@ -49,7 +49,7 @@ function activate(context) {
             borderRadius: "4px",
             fontWeight: "bold",
             before: {
-                contentText: "🦆 ",
+                contentText: "⚠️ ",
                 color: "orange",
                 margin: "0 6px 0 0",
                 fontWeight: "bold"
@@ -141,15 +141,15 @@ class CodeResQLensProvider {
     provideCodeLenses(document) {
         const lenses = [];
         const topOfDocument = new vscode.Range(0, 0, 0, 0);
-        lenses.push(new vscode.CodeLens(topOfDocument, { title: "Analyze Selection", command: "codeResQ.analyzeSelection" }));
-        lenses.push(new vscode.CodeLens(topOfDocument, { title: "Check Complexity", command: "codeResQ.checkComplexitySelection" }));
-        lenses.push(new vscode.CodeLens(topOfDocument, { title: "Refactor Selection", command: "codeResQ.refactorSelection" }));
+        lenses.push(new vscode.CodeLens(topOfDocument, { title: "🕵️‍♂️Analyze Selection", command: "codeResQ.analyzeSelection" }));
+        lenses.push(new vscode.CodeLens(topOfDocument, { title: "🧠Check Complexity", command: "codeResQ.checkComplexitySelection" }));
+        lenses.push(new vscode.CodeLens(topOfDocument, { title: "🔧Refactor Selection", command: "codeResQ.refactorSelection" }));
         const regex = /^\s*def\s+/;
         for (let i = 0; i < document.lineCount; i++) {
             const line = document.lineAt(i);
             if (regex.test(line.text)) {
-                lenses.push(new vscode.CodeLens(line.range, { title: "Refactor Function", command: "codeResQ.refactorSelection" }));
-                lenses.push(new vscode.CodeLens(line.range, { title: "Check Function Complexity", command: "codeResQ.checkComplexitySelection" }));
+                lenses.push(new vscode.CodeLens(line.range, { title: "🛠️Refactor Function", command: "codeResQ.refactorSelection" }));
+                lenses.push(new vscode.CodeLens(line.range, { title: "🔍Check Function Complexity", command: "codeResQ.checkComplexitySelection" }));
             }
         }
         return lenses;

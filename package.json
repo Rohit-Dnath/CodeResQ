@@ -1,6 +1,6 @@
 {
-	"name": "DuckKode",
-	"displayName": "DuckKode",
+	"name": "CodeResQ",
+	"displayName": "CodeResQ",
 	"description": "Protecting your code from vulnerabilities and bugs.",
 	"version": "0.0.2",
 	"publisher": "Nalayak",
@@ -18,7 +18,7 @@
 		"commands": [
 			{
 				"command": "crq.crq",
-				"title": "DuckKode"
+				"title": "CodeResQ"
 			}
 		]
 	},
