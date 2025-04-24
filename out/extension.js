@@ -43,7 +43,8 @@ function activate(context) {
             return;
         }
         const decorationType = vscode.window.createTextEditorDecorationType({
-            textDecoration: "underline wavy red"
+            backgroundColor: "rgba(255, 0, 0, 0.3)",
+            textDecoration: "underline dashed orange"
         });
         const decorationsArray = [];
         vulnerabilities.vulnerabilities.forEach((vulnerability) => {

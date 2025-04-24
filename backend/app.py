@@ -187,3 +187,7 @@ Refactor this code:
         optimized_code = optimized_code[:-3].strip()
 
     return {"optimized_code": optimized_code}
+
+if __name__ == '__main__':
+    import uvicorn
+    uvicorn.run(app, host="127.0.0.1", port=8000)

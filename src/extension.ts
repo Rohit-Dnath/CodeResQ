@@ -24,7 +24,8 @@ export function activate(context: vscode.ExtensionContext) {
     }
 
     const decorationType = vscode.window.createTextEditorDecorationType({
-      textDecoration: "underline wavy red"
+      backgroundColor: "rgba(255, 0, 0, 0.3)",
+      textDecoration: "underline dashed orange"
     });
 
     const decorationsArray: vscode.DecorationOptions[] = [];
