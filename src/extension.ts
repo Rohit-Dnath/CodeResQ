@@ -24,8 +24,17 @@ export function activate(context: vscode.ExtensionContext) {
     }
 
     const decorationType = vscode.window.createTextEditorDecorationType({
-      backgroundColor: "rgba(255, 0, 0, 0.3)",
-      textDecoration: "underline dashed orange"
+      backgroundColor: "rgba(255, 165, 0, 0.2)", // light orange
+      textDecoration: "underline double orange",
+      border: "1px solid orange",
+      borderRadius: "4px",
+      fontWeight: "bold",
+      before: {
+        contentText: "🦆 ",
+        color: "orange",
+        margin: "0 6px 0 0",
+        fontWeight: "bold"
+      }
     });
 
     const decorationsArray: vscode.DecorationOptions[] = [];
