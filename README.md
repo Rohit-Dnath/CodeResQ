@@ -2,6 +2,8 @@
 
 Welcome to **CodeResQ** — your smart coding assistant for detecting vulnerabilities, analyzing code complexity, and refactoring Python, TypeScript, and JavaScript code, all within Visual Studio Code!
 
+Demo Video: https://youtu.be/T_8CScm3SBk?si=M3Vp3SYvG4UNo8_y
+
 ---
 
 ## 🧑‍💻 What is CodeResQ?
